@@ -3,7 +3,7 @@
 #define THROTTLE_MAX_BURST 15 SECONDS
 #define SET_THROTTLE(TIME, REASON) throttle[1] = base_throttle + (TIME); throttle[2] = (REASON);
 
-
+/client/authenticate = 0
 
 var/global/game_id = randhex(8)
 
