@@ -2,8 +2,8 @@
 	title = "Chief Steward"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 	ideal_character_age = 35
 	economic_power = 6
@@ -42,8 +42,8 @@
 	title = "Chaplain"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 40
 	economic_power = 6
@@ -72,9 +72,9 @@
 	title = "Sanitation Technician"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Chief Steward"
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
 	alt_titles = list(
@@ -104,10 +104,10 @@
 	title = "Steward"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	minimum_character_age = list(SPECIES_HUMAN = 20)
-	supervisors = "the Chief Steward"
+	supervisors = "the Executive Officer"
 	alt_titles = list(
 		"Bartender",
 		"Cook",
@@ -144,7 +144,7 @@
 	department_flag = SRV
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Chief Steward"
+	supervisors = "the Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
         outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
