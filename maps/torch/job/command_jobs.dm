@@ -5,13 +5,13 @@
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o6
-	)
+        outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o6
+        )
 	skill_points = 36
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -28,7 +28,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
+        return "You are the Commanding Officer. You are the top dog. You are an experienced Fleet officer in control of an entire warship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils the Fleet's directives. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
 
 /datum/job/captain/post_equip_rank(mob/person, alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
@@ -45,15 +45,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5
-	)
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o4,
+                /datum/mil_rank/fleet/o5
+        )
 	skill_points = 36
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
@@ -97,12 +95,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o3
-	)
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o4,
+                /datum/mil_rank/fleet/o5
+        )
 
 	skill_points = 36
 	min_skill = list( // 16 points
@@ -136,7 +135,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/rd/get_description_blurb()
-	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the corporate interests of the Expeditionary Corps Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
+        return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liaise with the Fleet Research Directorate. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
 /datum/job/cmo
 	title = "Chief Medical Officer"
@@ -146,15 +145,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cmo/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/ec/o3
-	)
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o3,
+                /datum/mil_rank/fleet/o4
+        )
 	skill_points = 32
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -193,15 +190,13 @@
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
-	)
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o2,
+                /datum/mil_rank/fleet/o3
+        )
 	skill_points = 36
 	min_skill = list( // 31 points
 		SKILL_BUREAUCRACY  = SKILL_BASIC, // 1 point
@@ -250,15 +245,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
-	)
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o2,
+                /datum/mil_rank/fleet/o3
+        )
 	skill_points = 34
 	min_skill = list( // 15 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
@@ -383,15 +376,13 @@
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 22)
 	ideal_character_age = 24
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1
-	)
+        outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o1
+        )
 	skill_points = 26
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point

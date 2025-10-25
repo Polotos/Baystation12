@@ -13,13 +13,14 @@
 	ideal_character_age = 50
 	alt_titles = list(
 		"Research Supervisor")
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
-	)
+        outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o2,
+                /datum/mil_rank/fleet/o3
+        )
 
 	access = list(
 		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
@@ -73,17 +74,14 @@
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
-	)
+        outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/o1,
+                /datum/mil_rank/fleet/o2
+        )
 
 	access = list(
 		access_tox, access_tox_storage, access_research, access_petrov, access_petrov_helm,
@@ -111,18 +109,15 @@
 		"Clerk",
 		"Field Assistant")
 
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/assist,
-		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/assist/solgov
-	)
+        outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research
+        allowed_branches = list(
+                /datum/mil_branch/fleet
+        )
+        allowed_ranks = list(
+                /datum/mil_rank/fleet/e3,
+                /datum/mil_rank/fleet/e4,
+                /datum/mil_rank/fleet/e5
+        )
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
