@@ -19,9 +19,9 @@
 	channels = list("Service" = 1)
 
 /obj/item/device/encryptionkey/headset_torchcl
-	name = "corporate liaison radio encryption key"
-	icon_state = "nt_cypherkey"
-	channels = list("Service" = 1, "Command" = 1, "Hailing" = 1)
+        name = "logistics officer radio encryption key"
+        icon_state = "nt_cypherkey"
+        channels = list("Service" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_deckofficer
 	name = "deck chief's encryption key"

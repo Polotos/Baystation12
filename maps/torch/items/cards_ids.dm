@@ -206,8 +206,9 @@
 	detail_color = COLOR_OFF_WHITE
 
 /obj/item/card/id/torch/passenger/corporate/liaison
-	job_access_type = /datum/job/liaison
-	extra_details = list("onegoldstripe")
+        name = "logistics officer identification card"
+        job_access_type = /datum/job/liaison
+        extra_details = list("onegoldstripe")
 
 //Merchant
 /obj/item/card/id/torch/merchant

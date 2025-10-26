@@ -1,27 +1,27 @@
 /datum/map/torch
 	species_to_job_whitelist = list(
-		/singleton/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/cargo_tech,
+		/singleton/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/crew, /datum/job/cargo_tech,
 										/datum/job/engineer, /datum/job/roboticist, /datum/job/chemist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/nt_pilot,
 										/datum/job/mining),
-		/singleton/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
-									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor),
+		/singleton/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/crew, /datum/job/scientist_assistant, /datum/job/chemist,
+									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/engineer, /datum/job/doctor),
 		/singleton/species/vox = list(/datum/job/ai, /datum/job/cyborg),
 		/singleton/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
 #define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/representative, /datum/job/sea, /datum/job/pathfinder, /datum/job/rd
 	species_to_job_blacklist = list(
-		/singleton/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden), //Other jobs unavailable via branch restrictions,
-		/singleton/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden),
+		/singleton/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/warden), //Other jobs unavailable via branch restrictions,
+		/singleton/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/warden),
 		/singleton/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/singleton/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/psychiatrist, /datum/job/bridgeofficer, /datum/job/senior_engineer, /datum/job/warden, /datum/job/qm, /datum/job/senior_scientist, /datum/job/chief_steward),
-		/singleton/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/liaison, /datum/job/warden, /datum/job/doctor, /datum/job/medical_trainee),	//Other jobs unavailable via branch restrictions,
+		/singleton/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/psychiatrist, /datum/job/bridgeofficer, /datum/job/senior_engineer, /datum/job/warden, /datum/job/qm, /datum/job/senior_scientist),
+		/singleton/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/warden, /datum/job/doctor, /datum/job/medical_trainee),	//Other jobs unavailable via branch restrictions,
 	)
 #undef HUMAN_ONLY_JOBS
 
 	allowed_jobs = list(
-		/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-		/datum/job/liaison, /datum/job/representative, /datum/job/sea,
+                /datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
+                /datum/job/liaison, /datum/job/representative, /datum/job/sea,
 		/datum/job/bridgeofficer, /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
 		/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 		/datum/job/officer, /datum/job/warden, /datum/job/detective,
@@ -29,10 +29,8 @@
 		/datum/job/psychiatrist,
 		/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining,
 		/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
-		/datum/job/chief_steward, /datum/job/chef, /datum/job/janitor, /datum/job/crew,
+		/datum/job/crew,
 		/datum/job/cyborg,
-		/datum/job/chaplain,
-		/datum/job/assistant,
 		/datum/job/merchant
 	)
 
@@ -87,4 +85,4 @@
 	required_language = LANGUAGE_HUMAN_EURO
 
 /datum/map/torch
-	default_assistant_title = "Passenger"
+	default_assistant_title = "Crewman"

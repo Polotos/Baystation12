@@ -559,8 +559,8 @@
 // corporate memos
 
 /obj/item/paper/memo/corporate/stipendcut
-	name = "corporate spending records"
-	info = {"A "confidential" memo on the current usage of funds provided to SEV Torch corporate liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
+        name = "logistics spending records"
+        info = {"A "confidential" memo on the current usage of funds provided to SEV Torch logistics officers; apparently there's threats of a strike over a cut to the cost-of-living stipends by Fleet Procurement."}
 
 /obj/item/paper/memo/corporate/uniondues
 	name = "union dues reminder"
@@ -571,24 +571,24 @@
 	info = {"Some "internal use only" corporate documents detailing the proper ways to dispose of top secret and classified documents. It highlights that burning is most applicable, and shows pictures of shredded documents reconstructed with glue and sticky tape with a red "Fail" written below."}
 
 /obj/item/paper/memo/corporate/exointerest
-	name = "\improper EXO and you"
-	info = {"Some "confidential" corporate documents directed to the corporate liasion, informing them that their job is to represent EXO and its immediate interests, which are to ensure the SEV Torch is able to maintain the currently defined direction that is within the interests of EXO as a whole."}
+        name = "\improper Fleet Logistics and you"
+        info = {"Some "confidential" Fleet documents directed to the logistics officer, informing them that their job is to represent the Fleet's materiel interests, ensuring the SEV Torch is able to maintain the supply posture required by Command."}
 
 /obj/item/paper/memo/corporate/thequarterly
 	name = "quarterly budget report"
 	info = {"A "confidential" yet uninteresting report from the head office regarding budget plans announced two weeks ago."}
 
 /obj/item/paper/memo/corporate/kiareport
-	name = "deceased and missing staff reports"
-	info = {"A "confidential" memo reminding corporate liaisons to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
+        name = "deceased and missing staff reports"
+        info = {"A "confidential" memo reminding logistics officers to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
 
 /obj/item/paper/memo/corporate/spellchecker
-	name = "spellchecking and you"
-	info = {"Some "internal use only" corporate memos reminding corporate liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
+        name = "spellchecking and you"
+        info = {"Some "internal use only" Fleet memos reminding logistics officers to proofread reports. It details various reasons behind why correct spelling and punctuation help in making Fleet Command take your report seriously."}
 
 /obj/item/paper/memo/corporate/safetyfirst
-	name = "contractor safety and you"
-	info = {"An "internal use only" corporate document reminding corporate liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
+        name = "contractor safety and you"
+        info = {"An "internal use only" Fleet document reminding logistics officers to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of the Fleet as a whole is not tarnished due to a workplace accident."}
 
 /obj/item/paper/memo/corporate/legion
 	name = "internal communications"

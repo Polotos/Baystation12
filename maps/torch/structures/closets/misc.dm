@@ -25,7 +25,7 @@
 	)
 
 /obj/structure/closet/secure_closet/liaison
-	name = "corporate liaison's locker"
+        name = "logistics officer's locker"
 	req_access = list(access_liaison)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/corporate/liaison
 
